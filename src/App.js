@@ -1,11 +1,21 @@
+import React, { Component } from 'react'
 
-import './App.css';
+import ReactProps from './components/ReactProps'
 
-function App() {
-  return (
-    <div className="App">
-        <h1>Mani</h1>
-    </div>
-  );
+export class App extends Component {
+  render() {
+    return (
+      <div>
+
+        <div className="App">
+                 
+                 <ReactProps/>
+
+
+        </div>
+      </div>
+    )
+  }
 }
-export default App;
+
+export default App
