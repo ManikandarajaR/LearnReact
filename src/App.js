@@ -6,17 +6,21 @@ import PropsAndStates from './components/PropsAndStates';
 //import EvenHandling from './components/EvenHandling';
 import "./App.css";
 import ReactBind from './components/ReactBind';
-import MethodProps from './components/MethodProps';
+import ListAndKey from './components/conditional/ListAndKey';
+//import MethodProps from './components/MethodProps';
+//import ListRendering from './components/conditional/ListRendering'
+
 class App extends Component {
     render() {
       return (
-        <div className="App">
+        <div>
           {/* <div className="App">
                   <PropsAndStates 
                   name="Manikandaraja" 
                   heroName = "Developer"/>
           </div> */}
-                 <MethodProps/>
+                 {/*<MethodProps/>*/}
+                 <ListAndKey/>
         </div>
       )
     }
