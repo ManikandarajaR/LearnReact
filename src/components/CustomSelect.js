@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+/* import React, { Component , useState} from 'react'
 
 export class CustomSelect extends Component {
 
@@ -11,6 +11,21 @@ export class CustomSelect extends Component {
                fname : "",
                lname : "",
                age : "",
+               users : [
+                    {
+                         id:1,
+                        names : "fname",
+                    },
+                    {
+                         id:2,
+                        names : "lname",
+                    },
+                    {
+                         id:3,
+                        names : "age",
+                    }
+
+               ]
 
           }
      
@@ -28,7 +43,6 @@ export class CustomSelect extends Component {
           )
 
      }
-
 
      HandleChange = (e) =>
      {
@@ -74,22 +88,8 @@ export class CustomSelect extends Component {
           }
 
      render() {
-          this.segment_name = [
-               {
-                    names : "segment"
-               }
-          ]
-          this.datas = [
-               {
-                   names : "fname"
-               },
-               {
-                   names : "lname"
-               },
-               {
-                   names : "age"
-               }
-          ];
+
+          const [select,isSelect] =  useState(false);
           const data = [
                "First name","LastName","Age"
           ]
@@ -99,21 +99,23 @@ export class CustomSelect extends Component {
 
                     <form onSubmit = {this.handleSubmit}>
                                   
+
                                    <div className="segment_class">
                                              <input type="text" placeholder="Enter the segment name"  name="segment"
                                              onChange={this.handled.bind(this)}  value={this.state.segment} />
                                    </div>
 
                               {
-                                   this.datas.map(userInfo => 
+                                   this.state.users.map((userInfo) => 
                                         {
                                              return(
                                                   <div className="box">
                                                        <select name={userInfo.names} onChange={this.HandleChange} >
+                                                            
                                                                  <option>Add segment</option>
-                                                                 <option value="Manikandaraja">{data[0]}</option>
-                                                                 <option value="Rajsamy">{data[1]}</option>
-                                                                 <option value="25">{data[2]}</option>
+                                                                 <option value="First Name">First Name</option>
+                                                                 <option value="Last Name">Last Name</option>
+                                                                 <option value="age">Age</option>
                                                             
                                                        </select>
 
@@ -132,4 +134,4 @@ export class CustomSelect extends Component {
      }
 }
 
-export default CustomSelect
+export default CustomSelect */
